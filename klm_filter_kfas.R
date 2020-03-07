@@ -9,11 +9,8 @@ library(KFAS)
 library(xts)
 library(ggplot2)
 
-# オリジナルのデータは1年分あり。サンプルは1日分のみ公開。
-data <- read.csv("sample_data.csv")
-
-# 12時だけを使う
-train <- data[ as.POSIXlt(data$validtime)$hour==12 & as.POSIXlt(data$validtime)$min==0, ]
+# オリジナルのデータは1年分あり。サンプルは12時のみ6日分を公開。
+train <- read.csv("sample_data.csv")
 
 #-日射量、気温で時変係数モデルを組む
 # step1 : モデルの構造を決める
