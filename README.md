@@ -1,2 +1,4 @@
-# pv_fcst_klm
-PV power generation prediction by State-Space Model (Kalman Filter)
+# Rでカルマンフィルター
+気温ガイダンスなど、気象予測でよく使われているカルマンフィルターを、RのKFASパッケージで実装しました。
+
+サンプルプログラムは、日射量・気温から発電量を予測するモデルを組み、学習された回帰係数を可視化するものです。
